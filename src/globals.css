@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0f1b2d;
+  --color-surface: #1a2740cc;
+  --color-surface-border: #2e3d5680;
+
+  --color-foreground: #f8fafc;
+  --color-muted-foreground: #94a3b8;
+
+  --color-warning: #f59e0b;
+  --color-warning-foreground: #fbbf24;
+  --color-warning-border: #f59e0b66;
+
+  --color-info: #22d3ee;
+
+  --color-brand-start: #f97316;
+  --color-brand-end: #fb7185;
+
+  --color-brand-teal: #005a69;
+  --color-brand-purple: #6d28d9;
+}
+
+@layer components {
+  .bg-hero-mesh {
+    background-image:
+    radial-gradient(150% 100% at 15% 0%, #005a69 0%, transparent 60%),
+    radial-gradient(100% 80% at 90% 10%, #7439818c 0%, transparent 65%),
+    linear-gradient(180deg, #111c40, oklch(0.15 0.04 265));
+  }
+}
