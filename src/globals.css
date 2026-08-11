@@ -14,18 +14,21 @@
 
   --color-info: #22d3ee;
 
-  --color-brand-start: #f97316;
-  --color-brand-end: #fb7185;
+  --color-brand-start: #ffc04b;
+  --color-brand-end: #fd765d;
 
-  --color-brand-teal: #005a69;
+  --color-brand-teal: #006c7c;
   --color-brand-purple: #6d28d9;
+
+  --font-header: "Sora", sans-serif;
+  --font-body: "Manrope", sans-serif;
 }
 
 @layer components {
   .bg-hero-mesh {
     background-image:
-    radial-gradient(150% 100% at 15% 0%, #005a69 0%, transparent 60%),
-    radial-gradient(100% 80% at 90% 10%, #7439818c 0%, transparent 65%),
+    radial-gradient(130% 110% at 15% 0%, #006c7c 0%, transparent 70%),
+    radial-gradient(100% 100% at 90% 10%, #7439818c 0%, transparent 65%),
     linear-gradient(180deg, #111c40, oklch(0.15 0.04 265));
   }
 }
