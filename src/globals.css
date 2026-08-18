@@ -2,8 +2,8 @@
 
 @theme {
   --color-background: #0f1b2d;
-  --color-surface: #1a2740cc;
-  --color-surface-border: #2e3d5680;
+  --color-surface: #17233c8c;
+  --color-surface-border: #f4f9ff24;
 
   --color-foreground: #f8fafc;
   --color-muted-foreground: #94a3b8;
@@ -11,6 +11,7 @@
   --color-warning: #f59e0b;
   --color-warning-foreground: #fbbf24;
   --color-warning-border: #f59e0b66;
+  --shadow-warning: 0px 0px 22px var(--color-warning-border);
 
   --color-info: #22d3ee;
 
@@ -18,7 +19,7 @@
   --color-brand-end: #fd765d;
 
   --color-brand-teal: #006c7c;
-  --color-brand-purple: #6d28d9;
+  --color-brand-purple: #7439818c;
 
   --font-header: "Sora", sans-serif;
   --font-body: "Manrope", sans-serif;
@@ -27,8 +28,12 @@
 @layer components {
   .bg-hero-mesh {
     background-image:
-    radial-gradient(130% 110% at 15% 0%, #006c7c 0%, transparent 70%),
-    radial-gradient(100% 100% at 90% 10%, #7439818c 0%, transparent 65%),
-    linear-gradient(180deg, #111c40, oklch(0.15 0.04 265));
+      radial-gradient(130% 110% at 15% 0%, var(--color-brand-teal) 0%, transparent 70%),
+      radial-gradient(100% 100% at 90% 10%, var(--color-brand-purple) 0%, transparent 65%),
+      linear-gradient(180deg, #111c40, #040a1c);
+  }
+
+  .gradient-glass {
+    background-image: linear-gradient(145deg, #ffffff1f, #ffffff08);
   }
 }
